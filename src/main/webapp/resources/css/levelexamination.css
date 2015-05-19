@@ -1,0 +1,80 @@
+.container-examination{
+	 width: 95% !important;
+	 max-width: 1100px;
+}
+
+.content-examination{
+	width: 100% !important;
+	background-color: #E0E0E0; 
+	border-radius: 4px;
+}
+
+.top-exam{
+	width: 106% !important;
+	background-color: rgb(244, 139, 51);
+}
+
+.exam-title{
+	margin-top: 8px; 
+	font-size: 30px; 
+	text-align: center; 
+	height: auto; 
+	margin-bottom: 3px; 
+	padding: 5px;
+}
+
+.exam-parts{
+	font-size: 20px;
+	color: yellowgreen;
+	font-weight: 600;
+	text-align: center;
+	background-color: #3D3E3F;
+	height: auto;
+}
+
+.exam-part{
+	padding: 10px 0;
+}
+
+.exam-part:hover{
+	background-color: rgba(173, 173, 173, 0.3);
+}
+
+.question-content{
+	background-color: #fff
+}
+
+.question{
+	padding: 10px 5px;
+}
+
+.question-le{
+	padding: 10px 5px;
+	background-color: rgba(253, 247, 204, 0.71);
+}
+
+.question-incorrect{
+	padding: 10px 5px;
+	background-color:rgba(255, 3, 3, 0.28);
+}
+
+#submit-exam{
+	background-color: rgba(255, 145, 53, 1) !important;
+	float: right;
+	border-radius: 4px;
+}
+
+#submit-exam:hover a{
+	background-color: rgba(61, 219, 29, 1) !important;
+}
+
+#submit-exam > a{
+	color: white;
+}
+
+.badge{
+	margin-left: 8px;
+	background-color: white !important;
+	color: rgba(255, 145, 53, 1) !important;
+	font-size: 17px !important;
+}

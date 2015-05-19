@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+ 
+	<bean id="agreementDAO" class="com.css.mock.dao.impl.ImplAgreementDAO"></bean>
+	<bean id="dealerDAO" class="com.css.mock.dao.impl.ImplDealerDAO"></bean>
+	<bean id="agreementStatusDAO" class="com.css.mock.dao.impl.ImplAgreementStatusDAO"></bean>
+	<bean id="customerTypeDAO" class="com.css.mock.dao.impl.ImplCustomerTypeDAO"></bean>
+	
+	<bean id="agreementBO" class="com.css.mock.bo.impl.ImplAgreementBO">
+		<property name="agreementDAO" ref="agreementDAO" />
+		<property name="dealerDAO" ref="dealerDAO" />
+	</bean>
+	
+	<bean id="searchAgreementBO" class="com.css.mock.bo.impl.ImplSearchAgreementBO">
+		<property name="agreementDAO" ref="agreementDAO" />
+		<property name="agreementStatusDAO" ref="agreementStatusDAO" />
+		<property name="customerTypeDAO" ref="customerTypeDAO" />
+	</bean>
+ 
+</beans>
